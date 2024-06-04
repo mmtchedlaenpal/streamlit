@@ -103,26 +103,26 @@ hide_table_row_index = """<style> thead tr th:first-child {display:none} tbody t
 
 
 col1, col2, col3 = st.columns([1, 3, 1])
-with col1:
-    file_ = open("files/enpal_logo.png", "rb")
-    contents = file_.read()
-    data_url = base64.b64encode(contents).decode("utf-8")
-    file_.close()
-    st.markdown(
-        f"""<p style='text-align:left;'>
-        <img src='data:image/gif;base64,{data_url}' height=32></p>""",
-        unsafe_allow_html=True,
-    )
-with col2:
-    file_ = open("files/nm_logo.png", "rb")
-    contents = file_.read()
-    data_url = base64.b64encode(contents).decode("utf-8")
-    file_.close()
-    st.markdown(
-        f"""<p style='text-align:center;'>
-        <img src='data:image/gif;base64,{data_url}' height=32></p>""",
-        unsafe_allow_html=True,
-    )
+#with col1:
+#    file_ = open("files/enpal_logo.png", "rb")
+#    contents = file_.read()
+#    data_url = base64.b64encode(contents).decode("utf-8")
+#    file_.close()
+#    st.markdown(
+#        f"""<p style='text-align:left;'>
+#        <img src='data:image/gif;base64,{data_url}' height=32></p>""",
+#        unsafe_allow_html=True,
+#    )
+#with col2:
+#    file_ = open("files/nm_logo.png", "rb")
+#    contents = file_.read()
+#    data_url = base64.b64encode(contents).decode("utf-8")
+#    file_.close()
+#    st.markdown(
+#        f"""<p style='text-align:center;'>
+#        <img src='data:image/gif;base64,{data_url}' height=32></p>""",
+#        unsafe_allow_html=True,
+#    )
 with col3:
     selectbox_page = st.selectbox(
         "",
